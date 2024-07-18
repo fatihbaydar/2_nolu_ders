@@ -1,0 +1,46 @@
+.outer{
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+}
+
+.inner{
+    background-color: grey;
+    width: 50%;
+    height: 50%;
+    /* animation-name: kutu;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: both; */ 
+    animation: kutu 2s ease-in-out 2s 3 both;
+    an
+}
+
+@keyframes kutu{
+    0%{
+        transform: translate(0);
+        background-color: yellow;
+    }
+
+    25%{
+        transform: translateY(100%);
+    }
+
+    50%{
+        transform: translate(100%,100%);
+        background-color: magenta;
+        border-radius: 50%;
+    }
+
+    75%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+

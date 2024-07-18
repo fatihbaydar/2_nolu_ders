@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import './theme.css';
+
+:root{
+    --yesil: #22cb22;
+    --white: #ececec;
+    --orange: rgb(200, 155, 72);
+    --blue: rgb(139, 139, 241);
+    --darkblue: rgb(6, 6, 45);
+    
+    /* fonts */
+    --ff-moderna:"Playwrite IT Moderna", cursive;
+    --ff-mont:"Montserrat", sans-serif; 
+
+    /* font size */
+    --fs-lg:1.4rem;
+    --fs-xl:2rem;
+    --fs-xxl:3rem;
+}
+
+body{
+    background-color: var(--yesil);
+    /* background-color: var(--white); */
+    /* font-family: "Playwrite IT Moderna", cursive; */
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+h1{
+    background-color: var(--white);
+    font-family: var(--ff-moderna);
+}
+
+p{
+    background-color: var(--blue);
+    font-family: var(--ff-mont);
+    font-size: 2rem;
+}
+
+.container{
+    border: 2px solid red;
+    width: 500px;
+    height: 300px;
+    background-color: var(--blue-light-2);
+}
+
+.light{
+    background-color: var(--blue);
+    width: 150px;
+    height: 150px;
+    font-size: var(--fs-xxl);
+    /* background-color: var(--orange); */
+}
+
+.dark{
+    background-color: var(--darkblue);
+    width: 150px;
+    height: 150px;
+}
+
+/* @media screen and (min-width:800px) and (max-width:1100px) {
+    body{
+        background-color: #22a4cb;
+    } 
+} */
+
+@media screen and (max-width:1200px) {
+    body{
+        background-color: #cb223b;
+    } 
+}
+
+@media screen and (max-width:700px) {
+    body{
+        background-color: #cb8a22;
+    } 
+}
+@media screen and (max-width:360px) {
+    body{
+        background-color:blue
+    }  
+}
+
